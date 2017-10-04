@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+  <div id="displayContainer">
+    <h2>Pomodoro Clock</h2>
+      <div id="sessionContainer">
+        <h3>Session Length</h3>
+          <p class="setTime" id="sessionTime">
+            <a href="#" class="adjust" id="sessionMinus">-  </a>
+            <span id="sessionTimer">1</span>
+            <a href="#" class="adjust" id="sessionPlus">  +</a>
+          </p>
+      </div>
+
+      <div id="breakContainer">
+        <h3>Break Length</h3>
+          <p class="setTime" id="breakTime">
+            <a href="#" class="adjust" id="breakMinus">-  </a>
+            <span id="breakTimer">1</span>
+            <a href="#" class="adjust" id="breakPlus">  +</a>
+          </p>
+      </div>
+
+    <div id="timerContainer">
+      <h2>Current Session:</h2>
+      <h2 id="status"></h2>
+      <h2 id="timer">00:00</h2>
+      <button id="start">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <div id="progress">
+      <div id="percentComplete"></div>
+    </div>
+
+    <footer>Designed and Coded by Zach VanSomeren</footer>
+  </div>
+</body>
+</html>
